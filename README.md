@@ -1,23 +1,39 @@
-## hw04
-DS를 위한 통계적 방법론 HW04
+# DS를 위한 통계적 방법론 - HW04
 
-"hw01" 연구 결과
-"hw01" 연구에서는 부정적인 감정들 사이에 높은 상관관계가 있음을 확인했다. 
-우울, 불안, 소진 등의 감정이 서로 연관되어 복합적인 정신 건강 문제를 야기할 수 있음을 시사한다.
+본 과제에서는 이전 연구(HW01~HW03)의 분석 결과를 바탕으로, 정신건강 데이터의 통계적 특성과 기계학습 모델 적용 가능성을 검토하였다. 사용한 데이터는 스위스 로잔 대학교 의과대학 학생들의 정신건강 관련 설문 데이터이다.  
+(데이터 출처: [Zenodo](https://zenodo.org/record/5702895))
 
-"hw02" 연구 결과
-"hw02" 연구에서는 성별에 따른 멘탈건강 지표의 차이를 평가했다. 이 연구에서는 여성 의대생들이 부정적인 감정의 평균이 남성보다 더 높고, 특히 우울과 불안 지표에서 유의미한 차이를 보였다.
-또한, 여성 의대생들은 행동적, 인지적, 정서적 공감 능력이 더 높으며 남성 의대생들과 유의미한 차이를 보인다.
-반면, 남성 의대생들은 의학 전문직에 대한 스트레스가 더 높았고, 이 역시 여성 의대생들과 유의미한 차이가 있었다.
-우울 지수가 높은 그룹은 행동적, 인지적 공감 능력이 낮으며, 특히 행동적 공감 능력에서 유의미한 차이를 보였다.
+### 연구 요약
+- **HW01**: 부정적 감정(우울, 불안, 소진)의 강한 상관관계 → 복합적인 정신건강 문제 발생 가능성 시사  
+- **HW02**: 성별에 따른 차이  
+  - 여성 의대생: 부정적 감정 평균이 남성보다 높음, 우울·불안에서 유의미한 차이  
+  - 여성 의대생: 공감 능력(행동, 인지, 정서)도 더 높음  
+  - 남성 의대생: 전문직 스트레스 지수가 더 높음  
+  - 우울 지수 높은 그룹은 행동적 공감 능력이 특히 낮음  
+- **HW03**: 나이브 베이즈 분류  
+  - 감정 데이터 포함 → 성능 향상  
+  - 그러나 임상 실용성 측면에서는 감정 데이터를 제외한 모델이 더 유용할 수 있음
 
-"hw03" 연구 결과
-"hw03" 연구에서는 나이브베이즈 모델을 사용하여 임상적으로 우울증 위험이 높은 사람과 낮은 사람을 분류했다. 감정 데이터를 포함했을 때의 모델의 성능이 감정 데이터를 제외했을 때의 모델의 성능보다 높았다.
-그러나 실용적인 관점에서는 감정 데이터를 제외한 데이터로 우울증을 예측하는 것이 더 유용할 수 있다. 이에 따라, 이러한 접근 방식의 성능을 향상시키는 작업이 필요합니다.
+### 향후 연구
+- 감정 데이터를 배제한 우울증 예측 모델의 성능 향상 필요  
+- 임상 환경에서 환자의 우울증을 효과적으로 감지·대응할 수 있는 도구로 확장 가능
 
-향후 연구 방향
-감정 데이터를 배제한 우울증 예측 모델의 개발과 성능 향상에 초점을 맞춘 연구가 필요하다. 이러한 모델은 임상적 환경에서 환자의 우울증을 보다 효과적으로 감지하고 대응하는 데 도움이 될 수 있다.
+# Statistical Methods for Data Science - HW04
 
-이와 비슷한 연구가 여러 나라에서 진행되고 있으며, 내가 사용한 데이터는 로잔 대학교(스위스) 병원 생물학 및 의학부 대학생들의 데이터이다.
-데이터 : https://zenodo.org/record/5702895
+This assignment builds on previous analyses (HW01–HW03), exploring statistical characteristics of mental health data and the application of machine learning models.  
+The dataset was obtained from medical students at the University of Lausanne, Switzerland.  
+(Data source: [Zenodo](https://zenodo.org/record/5702895))
 
+### Summary of Previous Studies
+- **HW01**: Strong correlations were observed among negative emotions such as depression, anxiety, and burnout. These findings suggest the potential for interconnected mental health problems.  
+- **HW02**: Gender differences in mental health indicators were investigated.  
+  - Female medical students: higher averages in depression and anxiety, and higher empathy (behavioral, cognitive, and emotional).  
+  - Male medical students: higher levels of stress related to the medical profession.  
+  - Students with high depression scores: lower empathy, especially in behavioral empathy.  
+- **HW03**: A Naïve Bayes classifier was applied to predict individuals with high vs. low clinical risk of depression.  
+  - Performance improved when emotional data were included.  
+  - However, from a practical perspective, models that exclude emotional data may be more useful in clinical contexts.
+
+### Future Directions
+- Developing depression prediction models that perform well **without relying on emotional data**.  
+- Such approaches could provide more practical and effective tools for early detection and intervention in clinical environments.
